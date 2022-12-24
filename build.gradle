@@ -2,7 +2,7 @@ plugins {
     id 'java-library'
 }
 
-group 'org.example'
+group 'guru.qa'
 version '1.0-SNAPSHOT'
 
 repositories {
@@ -10,18 +10,22 @@ repositories {
 }
 
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter:5.9.0',
+    testImplementation ('org.junit.jupiter:junit-jupiter:5.9.0',
             'com.codeborne:selenide:6.10.3',
             'org.assertj:assertj-core:3.23.1',
             'com.codeborne:pdf-test:1.5.0',
             'com.codeborne:xls-test:1.4.3',
             'com.opencsv:opencsv:5.7.1',
             'com.google.code.gson:gson:2.10'
-
+    )
 }
 
 test {
     useJUnitPlatform()
 }
-
+compileTestJava {
+    options.encoding = 'UTF-8'
+}
+compileJava {
+    options.encoding = 'Utf-8'
 }
