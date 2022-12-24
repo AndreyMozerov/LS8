@@ -26,8 +26,8 @@ public class SelenideFilesTest {
     @Test
     void SelenideUploadTest(){
      open("https://fineuploader.com/demos.html");
-     $("input[type='file']").uploadFromClasspath("Краги.jpg");
-     $(".qq-file-info").shouldHave(Condition.text("Краги.jpg"));
+     $("input[type='file']").uploadFromClasspath("Glowes.jpg");
+     $(".qq-file-info").shouldHave(Condition.text("Glowes.jpg"));
     }
 
 }
