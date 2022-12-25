@@ -12,7 +12,7 @@ public class JsonParsingHw {
     void jsonReadHeroes() throws Exception {
         ObjectMapper mapper = new ObjectMapper ();
         File file = new File("src/test/resources/HW.json");
-        JsonHeroes.Heroes hero = mapper.readValue(file,JsonHeroes.Heroes.class);
+        JsonHeroes.Heroes hero = mapper.readValue(file, JsonHeroes.Heroes.class);
 
         assertThat(hero.formed).isEqualTo(2016);
         assertThat(hero.squadName).isEqualTo("Super hero squad");
