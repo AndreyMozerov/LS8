@@ -1,7 +1,7 @@
 package guru.qa;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import guru.qa.model.JsonHeroes;
+import guru.qa.heroes.JsonHeroes;
 import org.junit.jupiter.api.Test;
 import java.io.File;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;

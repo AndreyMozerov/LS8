@@ -1,4 +1,4 @@
-package guru.qa.model;
+package guru.qa.heroes;
 
 import java.util.ArrayList;
 
