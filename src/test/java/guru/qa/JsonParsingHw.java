@@ -10,9 +10,9 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 public class JsonParsingHw {
     @Test
     void jsonReadHeroes() throws Exception {
-        ObjectMapper mapper = new ObjectMapper ();
+        ObjectMapper mapper = new ObjectMapper();
         File file = new File("src/test/resources/HW.json");
-        JsonHeroes.Heroes hero = mapper.readValue(file, JsonHeroes.Heroes.class);
+        JsonHeroes hero = mapper.readValue(file, JsonHeroes.class);
 
         assertThat(hero.formed).isEqualTo(2016);
         assertThat(hero.squadName).isEqualTo("Super hero squad");

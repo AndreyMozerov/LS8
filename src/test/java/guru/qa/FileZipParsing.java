@@ -32,7 +32,7 @@ public class FileZipParsing {
                     XLS xls = new XLS(zip);
                     assertThat(xls.excel.getSheetAt(0).getRow(12).getCell(0).getStringCellValue()).isEqualTo("Время");
                     assertThat(xls.excel.getSheetAt(0).getRow(26).getCell(0).getStringCellValue()).isEqualTo("Время");
-                } else {
+                } else if (entry.getName().contains(".csv")) {
                     CSVReader csvReader = new CSVReader(new InputStreamReader(zip));
                     List<String[]> csv = csvReader.readAll();
                     assertThat(csv.get(0)[1]).contains("lesson");

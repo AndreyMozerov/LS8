@@ -6,18 +6,15 @@
    "members": [
     {
       "name": "Molecule Man",
-      "age": 29,
-
+      "age": 29
     },
     {
       "name": "Madame Uppercut",
-      "age": 39,
-
+      "age": 39
          },
     {
       "name": "Eternal Flame",
-      "age": 1000000,
-
+      "age": 1000000
      }
   ]
 }

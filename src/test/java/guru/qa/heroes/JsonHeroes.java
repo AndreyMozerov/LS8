@@ -3,7 +3,6 @@ package guru.qa.heroes;
 import java.util.ArrayList;
 
 public class JsonHeroes {
-    public static class Heroes {
 
         public String squadName, secretBase, homeTown;
         public int formed;
@@ -14,5 +13,5 @@ public class JsonHeroes {
             public String name;
         }
       }
-    }
+
 
